@@ -1,0 +1,133 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    /* Black background */
+    margin: 0;
+}
+
+.container {
+    background: #333;
+    /* Dark gray background for the calculator */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #ffa500;
+    /* Orange color */
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+.display h3 {
+    font-size: 48px;
+    color: #ffa500;
+    /* Orange text color */
+    padding: 10px;
+    border-radius: 10px;
+    background: #111;
+    /* Dark background for the display */
+    margin: 0;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 20px;
+    border-radius: 10%;
+    font-size: 30px;
+    background: #877c68;
+    /* Orange buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #ec8303;
+    /* Slightly darker orange on hover */
+}
+
+button:active {
+    background: #e07b00;
+    /* Darker orange on button press */
+}
+
+button.clear {
+    background: #7c412b;
+    /* Bright orange-red for 'AC' button */
+    color: white;
+}
+
+button.clear:hover {
+    background: #e03e00;
+    /* Darker shade for hover */
+}
+
+.history {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.history h4 {
+    font-size: 18px;
+    color: #895f10;
+    /* Orange color for history section */
+    margin-bottom: 10px;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history li {
+    background: #222;
+    /* Dark background for history items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #ffa500;
+    /* Orange text color for history items */
+}
+
+.history li:hover {
+    background: #333;
+    /* Slightly lighter background on hover */
+}
+
+button.clear-all {
+    background: #bf4b47;
+    /* Red color for 'AC' (All Clear) */
+    color: white;
+}
+
+button.clear-all:hover {
+    background: #c9302c;
+    /* Darker red on hover */
+}
+
+button.clear-all:active {
+    background: #b52e2a;
+    /* Even darker red on button press */
+}
